@@ -14,7 +14,7 @@
         look in Bootstrap</p>
     </section>
     <bodydiv outputclass="bd-example" deliveryTarget="html">
-      <table outputclass="table-striped"  otherprops="data-toggle(table) data-search(true) data-pagination(true) ">
+      <table outputclass="table-striped" otherprops="data-toggle(table) data-search(true) data-pagination(true) ">
         <tgroup cols="3">
           <colspec colname="COLSPEC0"/>
           <colspec colname="COLSPEC1"/>

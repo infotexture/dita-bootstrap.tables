@@ -50,7 +50,6 @@ dita --input=path/to/your.ditamap \
      --format=html5-bootstrap
 ```
 
-
 ## License
 
 [Apache 2.0](LICENSE) © 2024 Jason Fox

@@ -6,5 +6,9 @@
 -->
 <plugin id="net.infotexture.dita-bootstrap.tables" version="5.3.0">
   <require plugin="net.infotexture.dita-bootstrap"/>
-  <feature extension="dita.xsl.html5-bootstrap" value="xsl/xhtml.xsl" type="file"/>
+  <feature
+    extension="dita.xsl.html5-bootstrap"
+    value="xsl/xhtml.xsl"
+    type="file"
+  />
 </plugin>
