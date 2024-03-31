@@ -3,6 +3,72 @@
 <topic id="gestation">
   <title>Gestation</title>
   <body>
+      <table>
+      <tgroup cols="3">
+        <colspec colname="COLSPEC0" colwidth="2*"/>
+        <colspec colname="COLSPEC1" colwidth="1*"/>
+        <colspec colname="COLSPEC2" colwidth="1*"/>
+        <thead>
+          <row>
+            <entry colname="COLSPEC0" valign="top">Name</entry>
+            <entry colname="COLSPEC1" valign="top">Species</entry>
+            <entry colname="COLSPEC2" valign="top">Gestation</entry>
+          </row>
+        </thead>
+        <tbody id="data-short">
+          <row>
+            <entry>African wild dog</entry>
+            <entry>Lycaon pictus</entry>
+            <entry>71</entry>
+          </row>
+          <row>
+            <entry>Alpaca</entry>
+            <entry>Lama pacos</entry>
+            <entry>345</entry>
+          </row>
+          <row>
+            <entry>American bison</entry>
+            <entry>Bison bison</entry>
+            <entry>285</entry>
+          </row>
+          <row>
+            <entry>Armadillo (Nine-banded)</entry>
+            <entry>Dasypus novemcinctus</entry>
+            <entry>120</entry>
+          </row>
+          <row>
+            <entry>Armadillo (Six-banded)</entry>
+            <entry>Euphractus sexcinctus</entry>
+            <entry>62</entry>
+          </row>
+          <row>
+            <entry>Baboon</entry>
+            <entry>Papio sp.</entry>
+            <entry>185</entry>
+          </row>
+          <row>
+            <entry>Badger (American)</entry>
+            <entry>Taxidea taxus</entry>
+            <entry>60</entry>
+          </row>
+          <row>
+            <entry>Bear (black)</entry>
+            <entry>Ursus americanus</entry>
+            <entry>220</entry>
+          </row>
+          <row>
+            <entry>Bear (grizzly)</entry>
+            <entry>Ursus arctos</entry>
+            <entry>215</entry>
+          </row>
+          <row>
+            <entry>Bear (polar)</entry>
+            <entry>Ursus maritimus</entry>
+            <entry>241</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
     <table>
       <tgroup cols="3">
         <colspec colname="COLSPEC0" colwidth="2*"/>
@@ -72,7 +138,7 @@
             <entry>220</entry>
           </row>
           <row>
-            <entry>Bear (grizzly) (</entry>
+            <entry>Bear (grizzly)</entry>
             <entry>Ursus arctos</entry>
             <entry>215</entry>
           </row>
@@ -113,7 +179,7 @@
           </row>
           <row>
             <entry>Cat</entry>
-            <entry/>
+            <entry>Felis catus</entry>
             <entry>64</entry>
           </row>
           <row>
@@ -138,7 +204,7 @@
           </row>
           <row>
             <entry>Chinchilla</entry>
-            <entry/>
+            <entry>Chinchilla chinchilla</entry>
             <entry>110</entry>
           </row>
           <row>
@@ -148,7 +214,7 @@
           </row>
           <row>
             <entry>Chipmunk</entry>
-            <entry/>
+            <entry>Tamias striatus</entry>
             <entry>31</entry>
           </row>
           <row>
@@ -203,7 +269,7 @@
           </row>
           <row>
             <entry>Dolphin (Spinner)</entry>
-            <entry>(Stenella longirostris</entry>
+            <entry>Stenella longirostris</entry>
             <entry>318</entry>
           </row>
           <row>
@@ -218,7 +284,7 @@
           </row>
           <row>
             <entry>Elephant (Asian)</entry>
-            <entry/>
+            <entry>Elephas maximus</entry>
             <entry>617</entry>
           </row>
           <row>
@@ -323,7 +389,7 @@
           </row>
           <row>
             <entry>Hamster</entry>
-            <entry/>
+            <entry>Phodopus campbelli</entry>
             <entry>20</entry>
           </row>
           <row>
@@ -373,7 +439,7 @@
           </row>
           <row>
             <entry>Kangaroo</entry>
-            <entry/>
+            <entry>Osphranter antilopinus</entry>
             <entry>42</entry>
           </row>
           <row>
@@ -483,7 +549,7 @@
           </row>
           <row>
             <entry>Mouse (meadow)</entry>
-            <entry/>
+            <entry>Zapus hudsonius</entry>
             <entry>21</entry>
           </row>
           <row>
@@ -553,7 +619,7 @@
           </row>
           <row>
             <entry>Rabbit (domestic)</entry>
-            <entry/>
+            <entry>Oryctolagus cuniculus</entry>
             <entry>31</entry>
           </row>
           <row>

@@ -15,22 +15,22 @@
   <xsl:template match="*[@otherprops]" mode="frame-processing">
      <xsl:choose>
         <xsl:when test="@frame = 'sides'">
-          <xsl:attribute name="class" select="'border-start border-end pt-3 px-3'"/>
+          <xsl:attribute name="class" select="'border-start border-end p-3'"/>
         </xsl:when>
         <xsl:when test="@frame = 'top'">
           <xsl:attribute name="class" select="'border-top pt-3'"/>
         </xsl:when>
         <xsl:when test="@frame = 'bottom'">
-          <xsl:attribute name="class" select="'border-bottom pt-3 px-3'"/>
+          <xsl:attribute name="class" select="'border-bottom p-3'"/>
         </xsl:when>
         <xsl:when test="@frame = 'topbot'">
-          <xsl:attribute name="class" select="'border-top border-bottom pt-3 px-3'"/>
+          <xsl:attribute name="class" select="'border-top border-bottom p-3'"/>
         </xsl:when>
         <xsl:when test="@frame = 'all'">
-          <xsl:attribute name="class" select="'border pt-3 px-3'"/>
+          <xsl:attribute name="class" select="'border p-3'"/>
         </xsl:when>
         <xsl:when test="@frame = 'none'">
-          <xsl:attribute name="class" select="'border-0 pt-3 px-3'"/>
+          <xsl:attribute name="class" select="'border-0 p-3'"/>
         </xsl:when>
       </xsl:choose>
   </xsl:template>
@@ -46,6 +46,21 @@
         <!-- ↓ Add Bootstrap CSS class processing ↓ -->
         <xsl:call-template name="commonattributes"/>
         <xsl:call-template name="otherprops-attributes"/>
+        <xsl:if test="contains(@otherprops, 'search') or contains(@otherprops, 'sortable')  or contains(@otherprops, 'pagination') ">
+          <xsl:attribute name="data-toggle" select="'table'"/>
+        </xsl:if>
+
+        <xsl:if test="contains(@otherprops, 'search')">
+          <xsl:attribute name="data-search" select="'true'"/>
+        </xsl:if>
+        <xsl:if test="contains(@otherprops, 'sortable')">
+          <xsl:attribute name="data-sortable" select="'true'"/>
+        </xsl:if>
+        <xsl:if test="contains(@otherprops, 'pagination')">
+          <xsl:attribute name="data-pagination" select="'true'"/>
+        </xsl:if>
+
+
         <!-- ↑ End customization · Continue with DITA-OT defaults ↓ -->
         <xsl:call-template name="setid"/>
         <xsl:apply-templates select="." mode="css-class"/>
@@ -56,6 +71,16 @@
     </div>
 
     <xsl:apply-templates select="*[contains(@class, ' ditaot-d/ditaval-endprop ')]" mode="out-of-line"/>
+  </xsl:template>
+
+
+  <xsl:template match="*[table:is-thead-entry(.)]">
+    <th>
+      <xsl:if test="contains(ancestor::*[contains(@class,' topic/table ')]/@otherprops, 'sortable')">
+        <xsl:attribute name="data-sortable" select="'true'"/>
+      </xsl:if>
+      <xsl:apply-templates select="." mode="table:entry"/>
+    </th>
   </xsl:template>
 
 </xsl:stylesheet>

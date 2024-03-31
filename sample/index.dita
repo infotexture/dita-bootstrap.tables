@@ -14,7 +14,8 @@
         look in Bootstrap</p>
     </section>
     <bodydiv outputclass="bd-example" deliveryTarget="html">
-      <table outputclass="table-striped" otherprops="data-toggle(table) data-search(true) data-pagination(true) ">
+      <table outputclass="table-striped" otherprops="search">
+
         <tgroup cols="3">
           <colspec colname="COLSPEC0"/>
           <colspec colname="COLSPEC1"/>
@@ -26,7 +27,7 @@
               <entry colname="COLSPEC2" valign="top">Gestation</entry>
             </row>
           </thead>
-          <tbody conref="gestation.dita#gestation/data">
+          <tbody conref="gestation.dita#gestation/data-short">
             <row>
               <entry/>
               <entry/>
@@ -36,8 +37,11 @@
         </tgroup>
       </table>
     </bodydiv>
+    <codeblock>&lt;table otherprops="search"&gt;
+  ...etc
+&lt;/table&gt;</codeblock>
     <section>
-      <title>Search</title>
+      <title>Pagination</title>
       <p>Due to the widespread use of <xmlelement>table</xmlelement> elements across third-party widgets like calendars
         and date pickers, Bootstrap’s tables are opt-in. Extend with optional modifier outputclasses or custom styles.
         All table styles are not inherited in Bootstrap, meaning any nested tables can be styled independent from the
@@ -46,7 +50,8 @@
         look in Bootstrap</p>
     </section>
     <bodydiv outputclass="bd-example" deliveryTarget="html">
-      <table outputclass="table-striped" otherprops="data-toggle(table) data-pagination(true) ">
+      <table outputclass="table-striped" otherprops="pagination">
+
         <tgroup cols="3">
           <colspec colname="COLSPEC0"/>
           <colspec colname="COLSPEC1"/>
@@ -68,7 +73,9 @@
         </tgroup>
       </table>
     </bodydiv>
-
+    <codeblock>&lt;table otherprops="pagination"&gt;
+  ...etc
+&lt;/table&gt;</codeblock>
 
      <section>
       <title>Sorting</title>
@@ -80,7 +87,8 @@
         look in Bootstrap</p>
     </section>
     <bodydiv outputclass="bd-example" deliveryTarget="html">
-      <table outputclass="table-striped" otherprops="data-toggle(table) data-pagination(true) data-sortable(true)">
+      <table outputclass="table-striped" otherprops="pagination sortable">
+
         <tgroup cols="3">
           <colspec colname="COLSPEC0"/>
           <colspec colname="COLSPEC1"/>
@@ -102,5 +110,8 @@
         </tgroup>
       </table>
     </bodydiv>
+    <codeblock>&lt;table otherprops="pagination sortable"&gt;
+  ...etc
+&lt;/table&gt;</codeblock>
   </body>
 </topic>
