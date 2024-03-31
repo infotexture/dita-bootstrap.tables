@@ -1,0 +1,50 @@
+{
+  "name": "dita-bootstrap.tables",
+  "description": "DITA Open Toolkit plug-in that extends the DITA Bootstrap HTML output with additional features from the Bootstrap Tables library.",
+  "homepage": "https://infotexture.github.io/dita-bootstrap.tables",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/infotexture/dita-bootstrap.tables.git"
+  },
+  "license": "Apache-2.0",
+  "scripts": {
+    "check": "npm run prettier-check && npm run stylelint",
+    "fix:style": "stylelint \"**/*.css\" --fix",
+    "fmt": "npm run format",
+    "format": "prettier --write \"**/*.{css,dita*,json,md,xml,xsl,yml}\"",
+    "format:css": "prettier --write \"**/*.css\"",
+    "format:dita": "prettier --write \"**/*.dita\"",
+    "format:xml": "prettier --write \"**/*.xml\"",
+    "format:xsl": "prettier --write \"**/*.xsl\"",
+    "lint-staged": "lint-staged",
+    "prepare": "husky",
+    "prettier": "prettier --write \"**/*.{css,dita*,json,md,xml,xsl,yml}\"",
+    "prettier-check": "prettier --check \"**/*.{css,dita*,json,md,xml,xsl,yml}\"",
+    "stylelint": "stylelint \"**/*.css\" --globby-options '{\"dot\":true}'",
+    "test": "prettier --list-different \"**/*.{css,dita*,json,md,xml,xsl,yml}\""
+  },
+  "lint-staged": {
+    "*.{css,dita*,json,md,xml,xsl,yml}": [
+      "prettier --write"
+    ],
+    "*.css": [
+      "stylelint"
+    ]
+  },
+  "stylelint": {
+    "extends": [
+      "stylelint-config-twbs-bootstrap"
+    ],
+    "rules": {
+      "@stylistic/number-leading-zero": "always"
+    }
+  },
+  "devDependencies": {
+    "@prettier/plugin-xml": "3.2.2",
+    "husky": "^9.0.10",
+    "lint-staged": "15.2.2",
+    "prettier": "3.2.5",
+    "stylelint": "^16.2.0",
+    "stylelint-config-twbs-bootstrap": "^13.0.0"
+  }
+}
