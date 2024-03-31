@@ -46,7 +46,9 @@
         <!-- ↓ Add Bootstrap CSS class processing ↓ -->
         <xsl:call-template name="commonattributes"/>
         <xsl:call-template name="otherprops-attributes"/>
-        <xsl:if test="contains(@otherprops, 'search') or contains(@otherprops, 'sortable')  or contains(@otherprops, 'pagination') ">
+        <xsl:if
+          test="contains(@otherprops, 'search') or contains(@otherprops, 'sortable')  or contains(@otherprops, 'pagination') "
+        >
           <xsl:attribute name="data-toggle" select="'table'"/>
         </xsl:if>
 
