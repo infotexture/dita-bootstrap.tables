@@ -4,18 +4,28 @@
   <title>Tables</title>
   <shortdesc>Documentation and examples for styling DITA tables with Bootstrap classes.</shortdesc>
   <body outputclass="language-markup">
+     <p>The <term>DITA Bootstrap Tables</term> is a DITA-OT plug-in that incorporates the
+        <xref href="https://https://bootstrap-table.com/" format="html" scope="external">Bootstrap Table</xref> library
+        and adds the necessary CSS and JavaScript for dynamic tables with search, sort and pagination functions</p>
+      <p>For the full documentation, see
+        <xref
+        href="https://infotexture.github.io/dita-bootstrap.tables/"
+        format="html"
+        scope="external"
+      >infotexture.github.io/dita-bootstrap.tables</xref>.</p>
+    <section>
+      <title>Installing the <term>DITA Bootstrap Tables</term> plug-in</title>
+      <p>Use the <cmdname>dita</cmdname> command to add the <term>DITA Bootstrap Extension</term>
+       plug-in to your DITA Open Toolkit installation:</p>
+      <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname
+        >install</parmname> net.infotexture.dita-bootstrap.tables</codeblock>
+    </section>
     <section>
       <title>Search</title>
-      <p>Due to the widespread use of <xmlelement>table</xmlelement> elements across third-party widgets like calendars
-        and date pickers, Bootstrap’s tables are opt-in. Extend with optional modifier outputclasses or custom styles.
-        All table styles are not inherited in Bootstrap, meaning any nested tables can be styled independent from the
-        parent.</p>
-      <p>Using the most basic table markup, here’s how the default DITA Bootstrap <codeph>.table</codeph>-based tables
-        look in Bootstrap</p>
+       <p>Add <xmlelement>table otherprops="search"</xmlelement> to filter the results based on a search term.</p>
     </section>
     <bodydiv outputclass="bd-example" deliveryTarget="html">
-      <table outputclass="table-striped" otherprops="search">
-
+      <table outputclass="table-striped" otherprops="search pagination">
         <tgroup cols="3">
           <colspec colname="COLSPEC0"/>
           <colspec colname="COLSPEC1"/>
@@ -27,7 +37,7 @@
               <entry colname="COLSPEC2" valign="top">Gestation</entry>
             </row>
           </thead>
-          <tbody conref="gestation.dita#gestation/data-short">
+          <tbody conref="gestation.dita#gestation/data">
             <row>
               <entry/>
               <entry/>
@@ -42,16 +52,10 @@
 &lt;/table&gt;</codeblock>
     <section>
       <title>Pagination</title>
-      <p>Due to the widespread use of <xmlelement>table</xmlelement> elements across third-party widgets like calendars
-        and date pickers, Bootstrap’s tables are opt-in. Extend with optional modifier outputclasses or custom styles.
-        All table styles are not inherited in Bootstrap, meaning any nested tables can be styled independent from the
-        parent.</p>
-      <p>Using the most basic table markup, here’s how the default DITA Bootstrap <codeph>.table</codeph>-based tables
-        look in Bootstrap</p>
+      <p>Add <xmlelement>table otherprops="pagination"</xmlelement> to add paginator to a large table.</p>
     </section>
     <bodydiv outputclass="bd-example" deliveryTarget="html">
       <table outputclass="table-striped" otherprops="pagination">
-
         <tgroup cols="3">
           <colspec colname="COLSPEC0"/>
           <colspec colname="COLSPEC1"/>
@@ -79,16 +83,11 @@
 
      <section>
       <title>Sorting</title>
-      <p>Due to the widespread use of <xmlelement>table</xmlelement> elements across third-party widgets like calendars
-        and date pickers, Bootstrap’s tables are opt-in. Extend with optional modifier outputclasses or custom styles.
-        All table styles are not inherited in Bootstrap, meaning any nested tables can be styled independent from the
-        parent.</p>
-      <p>Using the most basic table markup, here’s how the default DITA Bootstrap <codeph>.table</codeph>-based tables
-        look in Bootstrap</p>
+      <p>Add <xmlelement>table otherprops="sortable"</xmlelement>
+      to allow each column to be sorted dynamically.</p>
     </section>
     <bodydiv outputclass="bd-example" deliveryTarget="html">
       <table outputclass="table-striped" otherprops="pagination sortable">
-
         <tgroup cols="3">
           <colspec colname="COLSPEC0"/>
           <colspec colname="COLSPEC1"/>
