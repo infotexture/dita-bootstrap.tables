@@ -53,6 +53,7 @@
     <section>
       <title>Pagination</title>
       <p>Add <xmlelement>table otherprops="pagination"</xmlelement> to add paginator to a large table.</p>
+
     </section>
     <bodydiv outputclass="bd-example" deliveryTarget="html">
       <table outputclass="table-striped" otherprops="pagination">
@@ -80,6 +81,25 @@
     <codeblock>&lt;table otherprops="pagination"&gt;
   ...etc
 &lt;/table&gt;</codeblock>
+    <p>The following page sizes are supported:</p>
+    <parml otherprops="cols(4)">
+      <plentry>
+        <pt><xmlatt>otherprops="pagination"</xmlatt></pt>
+        <pd>Table page size is 10 rows (default)</pd>
+      </plentry>
+      <plentry>
+        <pt><xmlatt>otherprops="pagination-25"</xmlatt></pt>
+         <pd>Table page size is 25 rows</pd>
+      </plentry>
+      <plentry>
+      <pt><xmlatt>otherprops="pagination-50"</xmlatt></pt>
+       <pd>Table page size is 50 rows</pd>
+      </plentry>
+      <plentry>
+      <pt><xmlatt>otherprops="pagination-100"</xmlatt></pt>
+       <pd>Table page size is 100 rows</pd>
+      </plentry>
+    </parml>
 
      <section>
       <title>Sorting</title>

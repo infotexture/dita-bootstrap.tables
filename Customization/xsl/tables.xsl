@@ -54,17 +54,35 @@
             <xsl:attribute name="data-locale" select="dita-ot:get-current-language(.)"/>
           </xsl:if>
         </xsl:if>
-
         <xsl:if test="contains(@otherprops, 'search')">
           <xsl:attribute name="data-search" select="'true'"/>
+          <xsl:attribute name="data-search-accent-neutralise" select="'true'"/>
+          <xsl:variable name="direction">
+            <xsl:apply-templates select="." mode="get-render-direction">
+              <xsl:with-param name="lang" select="dita-ot:get-current-language(.)"/>
+            </xsl:apply-templates>
+          </xsl:variable>
+          <xsl:if test="$direction='rtl'">
+            <xsl:attribute name="data-search-align" select="'left'"/>
+          </xsl:if>
         </xsl:if>
         <xsl:if test="contains(@otherprops, 'sortable')">
           <xsl:attribute name="data-sortable" select="'true'"/>
         </xsl:if>
         <xsl:if test="contains(@otherprops, 'pagination')">
           <xsl:attribute name="data-pagination" select="'true'"/>
+          <xsl:choose>
+            <xsl:when test="contains(@otherprops, 'pagination-100')">
+              <xsl:attribute name="data-page-size" select="'100'"/>
+            </xsl:when>
+            <xsl:when test="contains(@otherprops, 'pagination-50')">
+              <xsl:attribute name="data-page-size" select="'50'"/>
+            </xsl:when>
+            <xsl:when test="contains(@otherprops, 'pagination-25')">
+              <xsl:attribute name="data-page-size" select="'25'"/>
+            </xsl:when>
+          </xsl:choose>
         </xsl:if>
-
 
         <!-- ↑ End customization · Continue with DITA-OT defaults ↓ -->
         <xsl:call-template name="setid"/>
