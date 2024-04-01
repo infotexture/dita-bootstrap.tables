@@ -12,6 +12,13 @@
   exclude-result-prefixes="xs dita-ot"
 >
 
+  <xsl:param name="defaultLanguage" select="'en'" as="xs:string"/>
+
+  <xsl:variable
+    name="BOOTSTRAP_TABLE_SUPPORTED_LANGUAGE"
+    select="'((af|ar|ca|cs|da|de|el|en|es|et|eu|fa|fi|fr|he|hr|hu|id|it|ja|ka|ko|ms|nb|nl|pl|pt|ro|ru|sk|sv|th|tr|uk|ur|uz|vi|zh)(\-|$))'"
+  />
+
   <xsl:include href="../Customization/xsl/tables.xsl"/>
 
   <xsl:template match="/ | @* | node()" mode="processHDF">
@@ -28,5 +35,12 @@
       integrity="sha384-BJJUi58aYAf48aCP6OEvaED0GHzE/mkiXZkWNKzsxeSFDxFnlbpQ1hNmrXIRagDw"
       crossorigin="anonymous"
     />
+    <xsl:if test="matches($defaultLanguage,$BOOTSTRAP_TABLE_SUPPORTED_LANGUAGE)">
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap-table@1.22.4/dist/bootstrap-table-locale-all.min.js"
+        integrity="sha384-04YORxwrzedRoZb9qyVQLGh+qYYSdNKbg26iTJa22Vr43KSHo+qAYB6NRJt8LbdY"
+        crossorigin="anonymous"
+      />
+    </xsl:if>
   </xsl:template>
 </xsl:stylesheet>

@@ -50,6 +50,9 @@
           test="contains(@otherprops, 'search') or contains(@otherprops, 'sortable')  or contains(@otherprops, 'pagination') "
         >
           <xsl:attribute name="data-toggle" select="'table'"/>
+          <xsl:if test="matches(dita-ot:get-current-language(.), $BOOTSTRAP_TABLE_SUPPORTED_LANGUAGE)">
+            <xsl:attribute name="data-locale" select="dita-ot:get-current-language(.)"/>
+          </xsl:if>
         </xsl:if>
 
         <xsl:if test="contains(@otherprops, 'search')">
