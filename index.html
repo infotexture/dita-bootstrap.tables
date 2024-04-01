@@ -94,7 +94,7 @@
        <p class="p">Add <code class="keyword markupname xmlelement">&lt;table otherprops="search"&gt;</code> to filter the results based on a search term.</p>
     </section>
     <div class="bodydiv bd-example">
-      <div><table class="table table-striped" data-toggle="table" data-locale="en" data-search="true" data-pagination="true"><colgroup><col style="width:40%"><col style="width:40%"><col style="width:20%"></colgroup><thead class="thead">
+      <div><table class="table table-striped" data-toggle="table" data-locale="en" data-search="true" data-search-accent-neutralise="true" data-pagination="true"><colgroup><col style="width:40%"><col style="width:40%"><col style="width:20%"></colgroup><thead class="thead">
             <tr>
               <th class="entry align-top" id="tables__entry__1">Animal</th>
               <th class="entry align-top" id="tables__entry__2">Species</th>
@@ -597,7 +597,7 @@
             <td class="entry" headers="tables__entry__3">532</td>
           </tr>
           <tr>
-            <td class="entry" headers="tables__entry__1">Otte</td>
+            <td class="entry" headers="tables__entry__1">Otter</td>
             <td class="entry" headers="tables__entry__2">Lutra sp.</td>
             <td class="entry" headers="tables__entry__3">73</td>
           </tr>
@@ -814,6 +814,7 @@
     <section class="section"><h2 class="title h4">Pagination</h2>
       
       <p class="p">Add <code class="keyword markupname xmlelement">&lt;table otherprops="pagination"&gt;</code> to add paginator to a large table.</p>
+
     </section>
     <div class="bodydiv bd-example">
       <div><table class="table table-striped" data-toggle="table" data-locale="en" data-pagination="true"><colgroup><col style="width:40%"><col style="width:40%"><col style="width:20%"></colgroup><thead class="thead">
@@ -1319,7 +1320,7 @@
             <td class="entry" headers="tables__entry__429">532</td>
           </tr>
           <tr>
-            <td class="entry" headers="tables__entry__427">Otte</td>
+            <td class="entry" headers="tables__entry__427">Otter</td>
             <td class="entry" headers="tables__entry__428">Lutra sp.</td>
             <td class="entry" headers="tables__entry__429">73</td>
           </tr>
@@ -1533,6 +1534,25 @@
     <pre class="pre codeblock alert alert-secondary language-markup"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>table</span> <span class="ph token attr-name">otherprops</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>pagination<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
   ...etc
 <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>table</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+    <p class="p">The following page sizes are supported:</p>
+    <dl class="dl parml row">
+      
+        <dt class="dt pt col-lg-3 text-truncate dlterm"><code class="keyword markupname xmlatt">@otherprops="pagination"</code></dt>
+        <dd class="dd pd col-lg-9">Table page size is 10 rows (default)</dd>
+      
+      
+        <dt class="dt pt col-lg-3 text-truncate dlterm"><code class="keyword markupname xmlatt">@otherprops="pagination-25"</code></dt>
+         <dd class="dd pd col-lg-9">Table page size is 25 rows</dd>
+      
+      
+      <dt class="dt pt col-lg-3 text-truncate dlterm"><code class="keyword markupname xmlatt">@otherprops="pagination-50"</code></dt>
+       <dd class="dd pd col-lg-9">Table page size is 50 rows</dd>
+      
+      
+      <dt class="dt pt col-lg-3 text-truncate dlterm"><code class="keyword markupname xmlatt">@otherprops="pagination-100"</code></dt>
+       <dd class="dd pd col-lg-9">Table page size is 100 rows</dd>
+      
+    </dl>
 
      <section class="section"><h2 class="title h4">Sorting</h2>
       
@@ -2043,7 +2063,7 @@
             <td class="entry" headers="tables__entry__855">532</td>
           </tr>
           <tr>
-            <td class="entry" headers="tables__entry__853">Otte</td>
+            <td class="entry" headers="tables__entry__853">Otter</td>
             <td class="entry" headers="tables__entry__854">Lutra sp.</td>
             <td class="entry" headers="tables__entry__855">73</td>
           </tr>
