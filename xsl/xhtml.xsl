@@ -21,7 +21,7 @@
 
   <xsl:include href="../Customization/xsl/tables.xsl"/>
 
-  <xsl:template match="/ | @* | node()" mode="processHDF">
+  <xsl:template match="/ | @* | node()" mode="processHDF" priority="5">
       <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"/>
       <xsl:next-match/>
       <link
