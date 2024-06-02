@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="tables">
-  <title>Tables</title>
-  <shortdesc>Documentation and examples for styling DITA tables with Bootstrap classes.</shortdesc>
+  <title>Dynamic Tables</title>
+  <shortdesc>Documentation and examples for creating dynamic tables with the Bootstrap Table extension.</shortdesc>
   <body outputclass="language-markup">
      <p><term>DITA Bootstrap Table</term> is a DITA-OT plug-in that incorporates the
         <xref href="https://bootstrap-table.com/" format="html" scope="external">Bootstrap Table</xref> library

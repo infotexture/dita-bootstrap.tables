@@ -2,7 +2,7 @@
 
 <a href="https://www.dita-ot.org"><img src="https://www.dita-ot.org/images/dita-ot-logo.svg" align="right" height="55"></a>
 
-_DITA Bootstrap Table_ is a [DITA Open Toolkit plug-in](https://www.dita-ot.org/plugins) that extends the [DITA Bootstrap](https://infotexture.github.io/dita-bootstrap/) HTML output with additional features from the [Bootstrap Table](https://bootstrap-table.com) library.
+_DITA Bootstrap Table_ is a [DITA Open Toolkit plug-in](https://www.dita-ot.org/plugins) that extends the [DITA Bootstrap](https://infotexture.github.io/dita-bootstrap/) HTML output with dynamic tables from the [Bootstrap Table](https://bootstrap-table.com) library.
 
 <!-- MarkdownTOC levels="2,3" -->
 
