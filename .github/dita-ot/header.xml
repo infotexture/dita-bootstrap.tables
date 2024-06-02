@@ -2,7 +2,7 @@
   <div class="container-xxl">
     <a
       class="navbar-brand"
-      href="https://infotexture.github.io/dita-bootstrap.tables"
+      href="https://infotexture.github.io/dita-bootstrap.table"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -19,7 +19,7 @@
           d="M0 4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4zm4-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3H4z"
         />
       </svg>
-      DITA Bootstrap tables
+      DITA Bootstrap Table
     </a>
     <button
       class="navbar-toggler p-2"
@@ -37,26 +37,26 @@
         <li class="nav-item">
           <a
             class="nav-link"
-            href="https://www.dita-ot.org/plugins#!net.infotexture.dita-bootstrap.tables"
+            href="https://www.dita-ot.org/plugins#!net.infotexture.dita-bootstrap.table"
           >Plugin</a>
         </li>
         <li class="nav-item">
           <a
             class="nav-link"
-            href="https://github.com/infotexture/dita-bootstrap.tables/releases"
+            href="https://github.com/infotexture/dita-bootstrap.table/releases"
           >Releases</a>
         </li>
         <li class="nav-item">
           <a
             class="nav-link"
-            href="https://github.com/infotexture/dita-bootstrap.tables"
+            href="https://github.com/infotexture/dita-bootstrap.table"
           >Source</a>
         </li>
         <li class="nav-item">
           <a
             class="nav-link"
             href="https://bootstrap-table.com/"
-          >Bootstrap tables Docs</a>
+          >Bootstrap Table Docs</a>
         </li>
       </ul>
       <ul class="navbar-nav ms-auto me-1">

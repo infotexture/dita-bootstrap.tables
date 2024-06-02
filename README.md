@@ -1,8 +1,8 @@
-# DITA Bootstrap tables
+# DITA Bootstrap Table
 
 <a href="https://www.dita-ot.org"><img src="https://www.dita-ot.org/images/dita-ot-logo.svg" align="right" height="55"></a>
 
-_DITA Bootstrap tables_ is a [DITA Open Toolkit plug-in](https://www.dita-ot.org/plugins) that extends the [DITA Bootstrap](https://infotexture.github.io/dita-bootstrap/) HTML output with additional features from the [Bootstrap tables](https://bootstraptabless.com) library.
+_DITA Bootstrap Table_ is a [DITA Open Toolkit plug-in](https://www.dita-ot.org/plugins) that extends the [DITA Bootstrap](https://infotexture.github.io/dita-bootstrap/) HTML output with additional features from the [Bootstrap Table](https://bootstraptabless.com) library.
 
 <!-- MarkdownTOC levels="2,3" -->
 
@@ -10,15 +10,13 @@ _DITA Bootstrap tables_ is a [DITA Open Toolkit plug-in](https://www.dita-ot.org
   - [Installing DITA-OT](#installing-dita-ot)
   - [Installing the Plug-in](#installing-the-plug-in)
 - [Using](#using)
-  - [Optional elements](#optional-elements)
-  - [Common Bootstrap utility classes](#common-bootstrap-utility-classes)
 - [License](#license)
 
 <!-- /MarkdownTOC -->
 
 ## Installation
 
-The _DITA Bootstrap tables_ plug-in has been tested with [DITA-OT 4.x](https://www.dita-ot.org/download). Use the latest version for best results.
+The _DITA Bootstrap Table_ plug-in has been tested with [DITA-OT 4.x](https://www.dita-ot.org/download). Use the latest version for best results.
 
 ### Installing DITA-OT
 
@@ -38,7 +36,7 @@ See the [DITA-OT documentation](https://www.dita-ot.org/dev/topics/installing-cl
 ```console
 dita install fox.jason.extend.css
 dita install dita-bootstrap
-dita install https://github.com/infotexture/dita-bootstrap.tables/archive/develop.zip
+dita install https://github.com/infotexture/dita-bootstrap.table/archive/develop.zip
 ```
 
 ## Using
@@ -56,6 +54,6 @@ dita --input=path/to/your.ditamap \
 
 The generated HTML created by this software includes the following additional software components which are obtained under license:
 
-- Bootstrap tables – https://github.com/wenzhixin/bootstrap-table/ – **MIT license**
+- Bootstrap Table – https://github.com/wenzhixin/bootstrap-table/ – **MIT license**
 
-Within the documentation, where necessary, the texts describing the Bootstrap tables usage of each component have been copied directly from the [Bootstrap tables documentation](https://bootstraptabless.com/) however DITA markup is used throughout the examples describing how to implement these components correctly using `otherprops`. The text is therefore a derivative of "Bootstrap tables docs" by the Bootstrap tables team, and used under MIT.
+Within the documentation, where necessary, the texts describing the Bootstrap Table usage of each component have been copied directly from the [Bootstrap Table documentation](https://bootstraptabless.com/) however DITA markup is used throughout the examples describing how to implement these components correctly using `otherprops`. The text is therefore a derivative of "Bootstrap Table docs" by the Bootstrap Table team, and used under MIT.

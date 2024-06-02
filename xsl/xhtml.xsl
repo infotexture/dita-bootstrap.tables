@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  This file is part of the DITA Bootstrap tables plug-in for DITA Open Toolkit.
+  This file is part of the DITA Bootstrap Table plug-in for DITA Open Toolkit.
   See the accompanying LICENSE file for applicable licenses.
 -->
 <xsl:stylesheet

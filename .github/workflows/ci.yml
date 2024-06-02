@@ -37,7 +37,7 @@ jobs:
           plugins: |
             fox.jason.extend.css
             https://github.com/jason-fox/dita-bootstrap/archive/feature/extension.zip
-            https://github.com/jason-fox/dita-bootstrap.tables/archive/develop.zip
+            https://github.com/jason-fox/dita-bootstrap.table/archive/develop.zip
             fox.jason.prismjs
             fox.jason.favicon
             fox.jason.open-graph

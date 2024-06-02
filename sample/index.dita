@@ -4,21 +4,21 @@
   <title>Tables</title>
   <shortdesc>Documentation and examples for styling DITA tables with Bootstrap classes.</shortdesc>
   <body outputclass="language-markup">
-     <p>The <term>DITA Bootstrap Tables</term> is a DITA-OT plug-in that incorporates the
+     <p><term>DITA Bootstrap Table</term> is a DITA-OT plug-in that incorporates the
         <xref href="https://bootstrap-table.com/" format="html" scope="external">Bootstrap Table</xref> library
         and adds the necessary CSS and JavaScript for dynamic tables with search, sort and pagination functions</p>
       <p>For the full documentation, see
         <xref
-        href="https://infotexture.github.io/dita-bootstrap.tables/"
+        href="https://infotexture.github.io/dita-bootstrap.table/"
         format="html"
         scope="external"
-      >infotexture.github.io/dita-bootstrap.tables</xref>.</p>
+      >infotexture.github.io/dita-bootstrap.table</xref>.</p>
     <section>
-      <title>Installing the <term>DITA Bootstrap Tables</term> plug-in</title>
+      <title>Installing the <term>DITA Bootstrap Table</term> plug-in</title>
       <p>Use the <cmdname>dita</cmdname> command to add the <term>DITA Bootstrap Extension</term>
        plug-in to your DITA Open Toolkit installation:</p>
       <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname
-        >install</parmname> net.infotexture.dita-bootstrap.tables</codeblock>
+        >install</parmname> net.infotexture.dita-bootstrap.table</codeblock>
     </section>
     <section>
       <title>Search</title>

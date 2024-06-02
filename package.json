@@ -1,10 +1,10 @@
 {
-  "name": "dita-bootstrap.tables",
-  "description": "DITA Open Toolkit plug-in that extends the DITA Bootstrap HTML output with additional features from the Bootstrap Tables library.",
-  "homepage": "https://infotexture.github.io/dita-bootstrap.tables",
+  "name": "dita-bootstrap.table",
+  "description": "DITA Open Toolkit plug-in that extends the DITA Bootstrap HTML output with additional features from the Bootstrap Table library.",
+  "homepage": "https://infotexture.github.io/dita-bootstrap.table",
   "repository": {
     "type": "git",
-    "url": "https://github.com/infotexture/dita-bootstrap.tables.git"
+    "url": "https://github.com/infotexture/dita-bootstrap.table.git"
   },
   "license": "Apache-2.0",
   "scripts": {
