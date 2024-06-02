@@ -1,18 +1,18 @@
 <!DOCTYPE html
   SYSTEM "about:legacy-compat">
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><meta name="description" content="Documentation and examples for styling DITA tables with Bootstrap classes."><meta property="og:type" content="website"><meta property="og:url" content="https://infotexture.github.io/dita-bootstrap/index.html"><meta property="og:title" content="Tables"><meta property="og:description" content="Documentation and examples for styling DITA tables with Bootstrap classes."><meta property="og:image" content="https://infotexture.github.io/dita-bootstrap/open-graph.svg"><meta name="twitter:title" content="Tables"><meta name="twitter:description" content="Documentation and examples for styling DITA tables with Bootstrap classes."><meta property="twitter:url" content="https://infotexture.github.io/dita-bootstrap/index.html"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://infotexture.github.io/dita-bootstrap/open-graph.svg"><title>Tables</title><script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script><link rel="shortcut icon" href="./favicon/favicon.svg">
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><meta name="description" content="Documentation and examples for creating dynamic tables with the Bootstrap Table extension."><meta property="og:type" content="website"><meta property="og:url" content="https://infotexture.github.io/dita-bootstrap/index.html"><meta property="og:title" content="Dynamic Tables"><meta property="og:description" content="Documentation and examples for creating dynamic tables with the Bootstrap Table extension."><meta property="og:image" content="https://infotexture.github.io/dita-bootstrap/open-graph.svg"><meta name="twitter:title" content="Dynamic Tables"><meta name="twitter:description" content="Documentation and examples for creating dynamic tables with the Bootstrap Table extension."><meta property="twitter:url" content="https://infotexture.github.io/dita-bootstrap/index.html"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://infotexture.github.io/dita-bootstrap/open-graph.svg"><title>Dynamic Tables</title><script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script><link rel="shortcut icon" href="./favicon/favicon.svg">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-table@1.22.4/dist/bootstrap-table.min.css" integrity="sha384-1ie48E5ptWCDY9PXLXSMxA+rTXwrP63sKHXh8d9ong3ejEItSDkhid/S5enJvDeB" crossorigin="anonymous"><script src="https://cdn.jsdelivr.net/npm/bootstrap-table@1.22.4/dist/bootstrap-table.min.js" integrity="sha384-BJJUi58aYAf48aCP6OEvaED0GHzE/mkiXZkWNKzsxeSFDxFnlbpQ1hNmrXIRagDw" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap-table@1.22.4/dist/bootstrap-table-locale-all.min.js" integrity="sha384-04YORxwrzedRoZb9qyVQLGh+qYYSdNKbg26iTJa22Vr43KSHo+qAYB6NRJt8LbdY" crossorigin="anonymous"></script><link rel="stylesheet" type="text/css" href="css/commonltr.css">
 <link rel="stylesheet" type="text/css" href="./css/common-extended.css"><link rel="stylesheet" type="text/css" href="css/theme.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" integrity="sha384-XGjxtQfXaH2tnPFa9x+ruJTuLE3Aa6LhHSWRr1XeTyhezb4abCG4ccI5AkVDxqC+" crossorigin="anonymous"></head><body id="tables" class="d-flex flex-column min-vh-100 language-markup"><div class="visually-hidden-focusable overflow-hidden p-2 bg-body-tertiary"><div class="container-xl"><a class="d-inline-flex m-1 btn btn-outline-primary btn-sm" href="#ariaid-title1">Skip to main content</a></div></div><header role="banner" class="sticky-top"><nav class="navbar navbar-expand-lg navbar-dark bg-info">
   <div class="container-xxl">
-    <a class="navbar-brand" href="https://infotexture.github.io/dita-bootstrap.tables">
+    <a class="navbar-brand" href="https://infotexture.github.io/dita-bootstrap.table">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bootstrap" viewBox="0 0 16 16">
         <path d="M5.062 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377H6.375z"/>
         <path d="M0 4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4zm4-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3H4z"/>
       </svg>
-      DITA Bootstrap tables
+      DITA Bootstrap Table
     </a>
     <button class="navbar-toggler p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <i class="bi bi-three-dots"></i>
@@ -20,16 +20,16 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="https://www.dita-ot.org/plugins#!net.infotexture.dita-bootstrap.tables">Plugin</a>
+          <a class="nav-link" href="https://www.dita-ot.org/plugins#!net.infotexture.dita-bootstrap.table">Plugin</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://github.com/infotexture/dita-bootstrap.tables/releases">Releases</a>
+          <a class="nav-link" href="https://github.com/infotexture/dita-bootstrap.table/releases">Releases</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://github.com/infotexture/dita-bootstrap.tables">Source</a>
+          <a class="nav-link" href="https://github.com/infotexture/dita-bootstrap.table">Source</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://bootstrap-table.com/">Bootstrap tables Docs</a>
+          <a class="nav-link" href="https://bootstrap-table.com/">Bootstrap Table Docs</a>
         </li>
       </ul>
       <ul class="navbar-nav ms-auto me-1">
@@ -75,19 +75,19 @@
     </div>
   </div>
 </nav></header><div class="bs-container container-xxl bd-gutter mt-3 my-md-4" id="content"><nav class="d-flex flex-align-start flex-column h-100 overflow-y-auto" role="navigation" id="bs-sidebar-nav"><div class="overflow-y-auto"><div></div></div></nav><main role="main" class="bs-main me-3"><article role="article" class="bs-content" aria-labelledby="ariaid-title1">
-  <h1 class="title" id="ariaid-title1">Tables</h1>
+  <h1 class="title" id="ariaid-title1">Dynamic Tables</h1>
   
-  <div class="body language-markup"><p class="shortdesc text-body-secondary lead">Documentation and examples for styling DITA tables with Bootstrap classes.</p>
-     <p class="p">The <dfn class="term">DITA Bootstrap Tables</dfn> is a DITA-OT plug-in that incorporates the
+  <div class="body language-markup"><p class="shortdesc text-body-secondary lead">Documentation and examples for creating dynamic tables with the Bootstrap Table extension.</p>
+     <p class="p"><dfn class="term">DITA Bootstrap Table</dfn> is a DITA-OT plug-in that incorporates the
         <a class="xref" href="https://bootstrap-table.com/" target="_blank" rel="external noopener">Bootstrap Table</a> library
         and adds the necessary CSS and JavaScript for dynamic tables with search, sort and pagination functions</p>
       <p class="p">For the full documentation, see
-        <a class="xref" href="https://infotexture.github.io/dita-bootstrap.tables/" target="_blank" rel="external noopener">infotexture.github.io/dita-bootstrap.tables</a>.</p>
-    <section class="section"><h2 class="title h4">Installing the <dfn class="term">DITA Bootstrap Tables</dfn> plug-in</h2>
+        <a class="xref" href="https://infotexture.github.io/dita-bootstrap.table/" target="_blank" rel="external noopener">infotexture.github.io/dita-bootstrap.table</a>.</p>
+    <section class="section"><h2 class="title h4">Installing the <dfn class="term">DITA Bootstrap Table</dfn> plug-in</h2>
       
       <p class="p">Use the <span class="keyword cmdname">dita</span> command to add the <dfn class="term">DITA Bootstrap Extension</dfn>
        plug-in to your DITA Open Toolkit installation:</p>
-      <pre class="pre codeblock alert alert-secondary language-bash"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname"><span class="ph token function">install</span></span> net.infotexture.dita-bootstrap.tables</code></pre>
+      <pre class="pre codeblock alert alert-secondary language-bash"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname"><span class="ph token function">install</span></span> net.infotexture.dita-bootstrap.table</code></pre>
     </section>
     <section class="section"><h2 class="title h4">Search</h2>
       
