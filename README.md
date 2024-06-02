@@ -2,7 +2,7 @@
 
 <a href="https://www.dita-ot.org"><img src="https://www.dita-ot.org/images/dita-ot-logo.svg" align="right" height="55"></a>
 
-_DITA Bootstrap Table_ is a [DITA Open Toolkit plug-in](https://www.dita-ot.org/plugins) that extends the [DITA Bootstrap](https://infotexture.github.io/dita-bootstrap/) HTML output with additional features from the [Bootstrap Table](https://bootstraptabless.com) library.
+_DITA Bootstrap Table_ is a [DITA Open Toolkit plug-in](https://www.dita-ot.org/plugins) that extends the [DITA Bootstrap](https://infotexture.github.io/dita-bootstrap/) HTML output with additional features from the [Bootstrap Table](https://bootstrap-table.com) library.
 
 <!-- MarkdownTOC levels="2,3" -->
 
@@ -56,4 +56,4 @@ The generated HTML created by this software includes the following additional so
 
 - Bootstrap Table – https://github.com/wenzhixin/bootstrap-table/ – **MIT license**
 
-Within the documentation, where necessary, the texts describing the Bootstrap Table usage of each component have been copied directly from the [Bootstrap Table documentation](https://bootstraptabless.com/) however DITA markup is used throughout the examples describing how to implement these components correctly using `otherprops`. The text is therefore a derivative of "Bootstrap Table docs" by the Bootstrap Table team, and used under MIT.
+Within the documentation, where necessary, the texts describing the usage of each component have been copied directly from the [Bootstrap Table documentation](https://bootstrap-table.com/), however DITA markup is used throughout the examples describing how to implement these components correctly using `otherprops`. The text is therefore a derivative of "Bootstrap Table docs" by the Bootstrap Table team, and used under MIT.
